@@ -10,14 +10,14 @@ define Package/luci-app-vlmcsd
     SECTION:=luci
     CATEGORY:=LuCI
     SUBMENU:=3. Applications
-    DEPENDS:=+vlmcsd +luci-base +lua
+    DEPENDS:=+luci-base +lua
     TITLE:=vlmcsd windows/office activation service
     PKGARCH:=all
     MAINTAINER:=nealwon
 endef
 
 define Package/luci-app-vlmcsd/description
-    LuCI configuration for vlmcsd(kms service).
+    LuCI configuration for vlmcsd(kms service).vlmcsd should installed first
 endef
 
 include ../../../luci/luci.mk
